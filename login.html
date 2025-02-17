@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body class="subpage">
+
+      <!-- LOGIN PAGE-->
+    <header class="header_sub">
+        <!-- header.html 자리 -->
+    </header>
+
+
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text">
+                LOGIN PAGE
+            </div>
+            <div class="bread">
+                <a href="#">HOME</a>
+                <span> > </span>
+                <a href="#">LOGIN</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div id="section_box_sub">
+        
+        
+        <h2>로그인
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+        </h2>
+
+        <nav class="snb">
+            <div class="centerbox1200">
+              <ul>
+                <li class="on"><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">스카이패스</a></li>
+              </ul>
+                <span class="snb_line"></span>
+            </div>
+        </nav>
+        
+        <!-- 선때문에 -->
+
+        <article class="content login_page">
+            <div class="centerbox1200">
+               
+                <form action="#">
+                <fieldset>
+                    <legend>로그인</legend>
+                    <div class="login_box">
+                            <ul>
+                                <li>
+                                    <input type="text" placeholder="아이디 입력" required name="">
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="비밀번호 입력" required name="">
+                                    <div class="view_pw"><img src="images/eyes.png" alt="비밀번호보기"></div>
+                                    <div class="hide_pw"><img src="images/closedeyes.png" alt="비밀번호숨기기"></div>
+                                </li>
+                                <li class="idcheck">
+                                    <input type="checkbox" id="check_id"> 
+                                        <!-- <label for="check_id">
+                                            <span class="check">
+                                                <i class="fa-solid fa-check"></i> 
+                                            </span>
+                                        </label> -->
+                                    <label for="check_id">아이디 기억하기</label>
+                                </li>
+                            </ul>
+                            <button type="submit" class="btn1">로그인</button>
+                            <div class="link_box">
+                                <a href="join.html">회원가입</a>
+                                <a href="#">비밀번호찾기</a>
+                            </div>
+                     </div>
+                </fieldset>
+                </form>
+            </div>
+        </article>
+        
+    </div>
+
+
+    <footer></footer>
+
+
+
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".section2Slide", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 3,  //브라우저가 769보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+
+  </script>
+</body>
+</html>

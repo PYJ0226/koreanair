@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body class="subpage">
+
+  
+
+  <!--01-01회사소개페이지-->
+    <header class="header_sub">
+      <div class="centerbox1200">
+        <h1 class="merong">
+          <a href="index.html">
+            <img src="images/logo.png" alt="">
+          </a>
+        </h1>
+      </div>
+   </header>
+
+
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text">
+                ABOUT US
+            </div>
+            <div class="bread">
+                <a href="#">HOME</a>
+                <span> > </span>
+                <a href="#">ABOUT US</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="section_box_sub">
+        
+        <h2>회사소개
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+        </h2>
+
+        <nav class="snb">
+            <div class="centerbox1200">
+                <ul>
+                    <li class="on"><a href="sub01_01.html">회사 소개</a></li>
+                    <li><a href="sub01_02.html">리더십 소개</a></li>
+                    <li><a href="sub01_03.html">오시는 길</a></li>
+                </ul>
+                <span class="snb_line"></span>
+            </div>
+        </nav>
+
+        <article class="content company">
+            <div class="centerbox1200">
+              <div class="text_box">
+                <span class="ex">글로벌 항공사 선도기업</span>
+                <strong>세계적 서비스,
+                  <br>안전과 신뢰</strong>
+                <p>대한항공은 1969년에 설립된 대한민국의 대표 항공사로, 40개국 이상 130개 도시에 서비스를 제공합니다. 고객의 편안함과 안전을 최우선으로 하며, 최신 항공기와 우수한 서비스로 국제적인 인정을 받고 있습니다. 대한항공은 뛰어난 기내 서비스와 혁신적인 항공 기술을 통해 승객들에게 최상의 경험을 제공하며, 글로벌 네트워크 확장과 지속 가능한 운항을 위해 노력하고 있습니다. 50년 이상의 역사를 자랑하며, 고객 만족을 최우선으로 하고 있습니다.
+                  </p>
+              </div>
+
+              <div class="img_box">
+                <figure class="img1">
+                  
+                    <img src="images/sky.jpg" alt="">
+                </figure>
+                <figure class="img2">
+                  <img src="images/image 55.png" alt="">
+                </figure>
+              </div>
+            </div>
+        </article>
+        
+    </div>
+
+
+    <footer></footer>
+
+
+
+
+
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".section2Slide", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 3,  //브라우저가 769보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+
+</body>
+</html>

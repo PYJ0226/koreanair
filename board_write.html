@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body class="subpage">
+    <!--01-03회사소개페이지-->
+    <header class="header_sub">
+        <!-- header.html 자리 -->
+    </header>
+
+    
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text">
+                NEWS
+            </div>
+            <div class="bread">
+                <a href="#">HOME</a>
+                <span> > </span>
+                <a href="#">NEWS</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="section_box_sub">
+        
+        <h2>게시판 작성
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+        </h2>
+
+        <nav class="snb">
+            <div class="centerbox1200">
+                
+            
+            </div>
+        </nav>
+
+        
+        <article class="content board news">
+           <div class="centerbox1200">
+               <div class="board_box board_write">
+                    <ul>
+                        <li class="half">
+                            <h4>문의유형</h4>
+                            <div class="cont">
+                                <select name="" id="" class="text_input1">
+                                    <option value="일반문의">일반문의</option>
+                                    <option value="서비스개선">서비스개선</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <h4>글 공개 설정</h4>
+                            <div class="cont">
+                                <div class="radio_box">
+                                    <label for="public">
+                                        <input type="radio" id="public" name="public" value="공개" class="radio_check" checked>공개
+                                    </label>
+                                    <label for="secret">
+                                        <input type="radio" id="secret" name="public" value="비공개" class="radio_check">비공개
+                                    </label>
+                                </div>
+
+                                <input type="password" placeholder="비밀번호 입력" class="text_input1 inputC1 public_pw" readonly>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <h4>이름</h4>
+                            <div class="cont">
+                                <input type="text" placeholder="이름입력" class="text_input1">
+                            </div>
+                        </li>
+                        <li class="half">
+                            <h4>휴대폰번호</h4>
+                            <div class="cont">
+                                <input type="tel" placeholder="010-1234-5678" class="text_input1">
+                            </div>
+                        </li>
+                        <li>
+                            <h4>제목</h4>
+                            <div class="cont">
+                                <input type="text" placeholder="제목입력" class="text_input1">
+                            </div>
+                        </li>
+                        <li>
+                            <h4>문의내용</h4>
+                            <div class="cont">
+                                <textarea name="" id="" placeholder="문의내용 입력" class="text_input1"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="check_box">
+                        <label for="check">
+                            <input type="checkbox" id="check" name="check" class="radio_check">
+                            <span>개인정보 수집 및 이용에 동의합니다.</span>
+                        </label>
+                    </div>
+                    
+                    <div class="btn_box mt50">
+                        <button type="submit" class="btn1 btnC1">문의하기</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+
+
+    <footer></footer>
+
+
+
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".section2Slide", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 3,  //브라우저가 769보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+
+  </script>
+</body>
+</html>

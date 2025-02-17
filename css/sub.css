@@ -1,0 +1,796 @@
+
+
+
+
+header.header_sub {position: relative;}
+header.header_sub nav .gnb > li > a {color:#000;}
+header.header_sub nav .spotmenu a {color: #333;}
+
+#visual_sub {height: 180px; background: #025ba3; }
+#visual_sub .centerbox1200 {display: flex; justify-content: center; align-items: center; position: relative; height: 100%;}
+#visual_sub .sub_text {color: #fff; font-size: 40px; letter-spacing: 0.2em; font-family: 'Pretendard-Bold';}
+#visual_sub .bread {position: absolute; bottom: 0; right: 0; height: 40px; display: flex; align-items: center; gap: 15px; padding-right: 20px;}
+#visual_sub .bread a {color: #ffffff;}
+#visual_sub .bread a:hover {color: #96dcf3;}
+#visual_sub .bread span {color:#fff;}
+
+
+
+
+#section_box_sub {display: flex; flex-direction: column; align-items: center; }
+#section_box_sub h2 {font-size: 28px; padding: 16px 50px; margin: 25px 0 50px 0; position: relative;}
+#section_box_sub h2 span {position: absolute; background: #025ba3;}
+
+#section_box_sub h2 span.top {top: 0px; left: 0; width: 0; height: 1px; animation: h2Top 1s forwards;}
+@keyframes h2Top {
+    0% {width: 0; height: 1px; left: 0; top: 0;}
+    50% {width: 100%; height: 1px; left: 0; top: 0;}
+    100% {width: 0; height: 1px; left: 100%; top: 0;}
+}
+#section_box_sub h2 span.right {top: 0px; right: 0; width: 0; height: 1px; animation: h2Right 1s forwards; animation-delay: 0.5s;}
+@keyframes h2Right {
+    0% {width: 1px; height: 0; right: 0; top: 0;}
+    50% {width: 1px; height: 100%; right: 0; top: 0;}
+    100% {width: 1px; height: 30%; right: 0; top: 70%;}
+}
+#section_box_sub h2 span.bottom {bottom: 0px; right: 0; width: 0; height: 1px; animation: h2Bottom 1s forwards;}
+@keyframes h2Bottom {
+    0% {width: 0; height: 1px; right: 0; bottom: 0;}
+    50% {width: 100%; height: 1px; right: 0; bottom: 0;}
+    100% {width: 0; height: 1px; right: 100%; bottom: 0;}
+}
+#section_box_sub h2 span.left {bottom: 0px; left: 0; width: 0; height: 1px; animation: h2Left 1s forwards; animation-delay: 0.5s;}
+@keyframes h2Left {
+    0% {width: 1px; height: 0; left: 0; bottom: 0;}
+    50% {width: 1px; height: 100%; left: 0; bottom: 0;}
+    100% {width: 1px; height: 30%; left: 0; bottom: 70%;}
+}
+
+
+#section_box_sub h2::before {content: ""; position: absolute; width: 0; height: 1px; top: 0; left: 0; animation: h2Before 0.5s forwards; background:#025ba3; animation-delay: 1s;}
+@keyframes h2Before {
+    0% {width: 0;}
+    100% {width: 20%;}
+}
+#section_box_sub h2::after {content: ""; position: absolute; width: 0; height: 1px; bottom: 0; right: 0; animation: h2After 0.5s forwards; background:#025ba3; animation-delay: 1s;}
+@keyframes h2After {
+    0% {width: 0;}
+    100% {width: 20%;}
+}
+
+
+#section_box_sub .centerbox1200 {position: relative;display: flex; gap: 50px;width: 100%; box-sizing: border-box; }
+#section_box_sub .snb {width: 100%; border-bottom: 1px solid #ddd; position: relative;word-break: keep-all;}
+#section_box_sub .snb ul {max-width: 1200px; display: flex; justify-content: center; margin: 0 auto; }
+#section_box_sub .snb ul li {font-size: 18px;}
+#section_box_sub .snb ul li a {padding: 10px 2.6vw; display: block; border-right: 1px solid #ddd; }
+#section_box_sub .snb ul li a:hover {color: #025ba3}
+#section_box_sub .snb ul li:last-child a {border: 0;}
+#section_box_sub .snb ul li.on {}
+#section_box_sub .snb .snb_line {position: absolute;  height: 2px; background: #025ba3; transition: 0.3s; left: 0; }
+
+
+#section_box_sub .content {padding: 6.25vw 0;width: 100%;}  /* 0814위드백 추가-항공권예약페이지확인필 */
+
+
+
+
+
+
+/* 서브페이지1 article class company 회사소개페이지 */
+.company .text_box {flex-basis: 410px; }
+.company .text_box .ex {font-size: 25px; color:#025ba3; display: block; margin-bottom: 33px;font-family: "pretendard-semibold";}
+.company .text_box strong {font-size: 60px; font-weight: lighter; display: block; margin-bottom: 33px;}
+.company .text_box p {font-size: 22px;}
+
+.company .img_box {flex-basis: 740px; position: relative; display: flex; justify-content:flex-end;}
+
+.company .img_box figure.img1 {width: 250px; height: 400px; position: absolute; border: 5px solid #fff; left: 0; top: 40px; box-shadow: 0 0 10px rgba(0,0,0,0.2); overflow: hidden;}
+.company .img_box figure.img1 img {height: 100%;}
+
+.company .img_box figure.img2 {width: 550px; height: 500px; border: 5px solid #fff; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.2);}
+.company .img_box figure.img2 img {height: 100%;}
+
+
+/* 서브페이지2 article class greeting 리더십  */
+.greeting {max-width:700px}
+.greeting .text_box p {font-size: 35px;}
+
+.greeting .text_box h3 {
+    font-size: 40px;
+    font-weight: bold; 
+    color:#025ba3; 
+    margin-bottom: 20px; 
+}
+
+.greeting .text_box p {
+    font-size: 16px;
+    line-height: 1.6; 
+    color: #555;
+    margin-bottom: 20px; 
+}
+
+.greeting .text_box p span {
+    font-weight: bold; 
+    color: #000; 
+}
+
+
+/*서브페이지3 article class direction 오시는길 */
+.direct_box {width:calc(100vw - 40px);}
+
+
+
+
+/* 서브페이지4 article class reserve 항공편예약 */
+
+.reserve .reservation-container {display: flex; align-items: stretch; gap: 20px; margin: 0 auto; max-width: 1200px;box-sizing: border-box; }
+
+
+.reserve .reservation-image {flex: 1; box-sizing: border-box; }
+
+.reserve .reservation-image img {width: 100%; height: 100%;object-fit: cover;border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+
+
+.reserve .reservation-details {flex: 1; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); box-sizing: border-box;}
+
+
+.reserve .reservation-details h3 {font-size: 1.8em; margin-bottom: 20px;text-align: center;}
+
+.reserve .reservation-details .form-group {margin-bottom: 20px; }
+
+.reserve .reservation-details .form-group label {display: block; font-weight: bold;margin-bottom: 8px; }
+
+.reserve .reservation-details .form-group input,
+.reserve .reservation-details .form-group select {width: 100%; padding: 12px; 
+border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;}
+
+.reserve .reservation-details .form-row {display: flex; gap: 20px;}
+
+.reserve .reservation-details .form-row .form-group {flex: 1;}
+
+.reserve .reservation-details button {background-color: #025ba3; color: #fff; border: none; padding: 15px; font-size: 1.2em; border-radius: 4px; cursor: pointer; width: 100%; box-sizing: border-box; transition: background-color 0.3s ease;}
+
+.reserve .reservation-details button:hover {background-color: #56C6EB;}
+
+
+
+/* 서브페이지5 article class login_page 로그인*/
+
+.login_page{width: 100%;}
+
+.login_page .centerbox1200 {justify-content: center;}
+.login_page .centerbox1200 form {width: 800px;;}
+/* .login_page .login_box {width: 500px; display: flex; flex-direction: column; align-items: center;} */
+.login_page .login_box {
+    width: 100%;
+    max-width: 500px; /* 박스 최대 너비 설정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+    margin: 0 auto; /* 중앙 정렬 */
+}
+.login_page .login_box ul {width: 100%;}
+.login_page .login_box ul li {margin-bottom: 14px; position: relative;}
+.login_page .login_box li input[type="text"],
+.login_page .login_box li input[type="password"] {width: 100%; border: 1px solid #ddd; border-radius: 8px; font-size: 18px; text-indent: 20px; height: 50px;}
+.login_page .login_box ul li .view_pw {position: absolute; right: 20px; top: 8px; cursor: pointer;}
+.login_page .login_box ul li .hide_pw {position: absolute; right: 20px; top: 8px; display: none; cursor: pointer;}
+
+.login_page .login_box li.idcheck {display: flex;align-items: center; gap: 10px;}
+.login_page .login_box li input[type="checkbox"] {width: 20px;height: 20px;}
+
+
+
+.login_page .login_box button:hover {background-color: #56C6EB;}
+
+.login_page .login_box .link_box {height: 50px; display: flex;align-items: center; gap: 40px; }
+
+.login_box .login_box .link_box a{position: relative;}
+.login_box .login_box .link_box a:before {content:"";width: 4px;height: 4px;border-radius :50%;background: #444;position: absolute;left: -8px;top:40%}
+
+
+.login_page .centerbox1200 {justify-content: center;}
+.login_page .centerbox1200 form {width: 800px;}
+.login_page .login_box {min-width: 400px; display: flex; flex-direction: column; align-items: center;}
+.login_page .login_box ul {width: 100%;}
+.login_page .login_box ul li {margin-bottom: 14px; position: relative;}
+.login_page .login_box li input[type="text"],
+.login_page .login_box li input[type="password"] {width: 100%; border: 1px solid #ddd; border-radius: 8px; font-size: 18px; text-indent: 20px; height: 50px;}
+.login_page .login_box ul li .view_pw {position: absolute; right: 20px; top: 8px; cursor: pointer;}
+.login_page .login_box ul li .hide_pw {position: absolute; right: 20px; top: 8px; display: none; cursor: pointer;}
+
+.login_page .login_box li.idcheck {display: flex;align-items: center; gap: 10px;}
+.login_page .login_box li input[type="checkbox"] {width: 20px;height: 20px;}
+
+.btn1{padding: 15px 75px; background:#025ba3; border-radius: 4px; color: #fff; font-size: 16px; margin-top: 50px;
+box-sizing: border-box;}
+
+.login_page .login_box button:hover {background-color: #56C6EB;}
+
+.login_page .login_box .link_box {height: 50px; display: flex;align-items: center; gap: 40px; }
+
+.login_box .login_box .link_box a{position: relative;}
+.login_box .login_box .link_box a:before {content:"";width: 4px;height: 4px;border-radius :50%;background: #444;position: absolute;left: -8px;top:40%}
+
+
+/* 서브페이지5 article class join_page */
+.join_page {width: 100%;}
+.join_page .centerbox1200 {justify-content: center;}
+.join_page .centerbox1200 form {max-width: 800px;}
+.join_page .join_box li {display: flex; align-items: center;margin-bottom: 30px;}
+.join_page .join_box li label {width: 200px;flex-shrink: 0;}
+.join_page .join_box li label.pilsu::after {content:"*";color: red ;margin-left: 5px;}
+.join_page .join_box li .input_wrap {flex-grow: 1; }
+
+.join_page .join_box li input:not([type='file']){width: 100%; border: 1px solid #ddd; border-radius: 8px; font-size: 18px; text-indent: 20px; height: 50px;}
+
+.join_page .join_box li input[type="radio"]{width: 20px;height: 20px;}
+
+.join_page .join_box .btn_box{display: flex;justify-content: center;}
+
+.join_page .join_box .gender {display: flex; gap: 20px;}
+.join_page .join_box .input_wrap label {width: auto;display: inline-flex;gap: 10px;align-items: center;margin-right: 20px;}
+.join_page .join_box li input[type='checkbox']{width: 20px;height: 20px;}
+
+
+.join_page .join_box li input[type='file'] {display: none;}
+.join_page .join_box li input[type='file'] ~ label {border-radius: 8px;padding: 0 30px; height: 50px;background: #025ba3;color: #fff;}
+
+
+/* .join_page .join_box li select{ */
+    select{
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cfd0d3;
+    border-radius: 8px;
+    background: url(/images/icon_arrow_down.png) no-repeat center right 16px;
+    background-size: 30px;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;  
+    appearance: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #1e1e1e;}
+
+    .join_page .join_box li .member_rule {border: 1px solid #ddd; border-radius: 0px; white-space: pre-wrap; height: 300px; position: relative; overflow: hidden; width: 100%; font-size: 0;}
+    .join_page .join_box li .member_rule .rule {overflow: auto; height: 100%; position: absolute; width: 100%; top: 0;left: 0;padding: 12px 16px; font-size: 16px;box-sizing: border-box; }
+    
+
+    .join_page .join_box li .member_rule textarea {height: 100%; width: 100%; top: 0;left: 0;padding: 12px 16px; font-size: 16px;box-sizing: border-box; }
+   
+
+    /* 서브페이지7 article page board_list 게시판 목록 */
+
+    .board_box {width: 100%;}
+    .board .board_top {display: flex;justify-content: space-between;margin-bottom: 20px;}
+    .board .board_top .search {height: 50px;border-radius: 10px;border: 1px solid #ccc;display: flex;}
+    .board .board_top .search  input {border:none; width: 100%;height: 100%; font-size: 16px;background: none;text-indent: 10px;}
+    .board .board_top .search  button {font-size: 20px;width: 50px;}
+    .board .board_top  .btn1 {margin-top:0}
+
+
+
+    /* pagination */
+    .board .pagination {display: flex;justify-content: center;align-items: center; gap: 20px;margin-top: 6vw;}
+    .board .pagination .page_num{display: flex;}
+    .board .pagination .page_num li{font-size: 18px;width: 40px;height: 40px;}
+    .board .pagination .page_num li.on{background: #ddd;border-radius:50%;}
+    .board .pagination .page_num li a{display: flex;justify-content: center;align-items: center;height: 100%;}
+
+    .board .pagination .btn_page{width: 40px;height: 40px;display: flex;justify-content: center;align-items: center;}
+    .board .pagination .btn_page.off{color:#bbb} /* ㅎ화살표비활 */
+    
+
+
+    .board .title_line {width: 100%; height: 60px;  background: #bbb; color: #fff; display: flex; align-items: center; font-weight: bold;}
+    .board .title_line li {width: 120px; text-align: center;min-width: 100px}
+    .board .title_line li.subject {flex-grow: 1;width: 800px;}
+  
+  
+    .board .content_box {}
+    .board .content_box li {height: 60px; font-size: 18px;}
+    .board .content_box li a {display: flex; text-align: center; height: 100%; align-items: center; }
+    .board .content_box li a .num {width: 120px; min-width: 100px }
+    .board .content_box li a em {width: 120px; font-style: normal; min-width: 100px;}
+    .board .content_box li a .name {width: 120px; min-width: 100px}
+    .board .content_box li a .date {width: 120px; min-width: 100px}
+    .board .content_box li a .reply_icon {width: 120px; height: 100%; display: flex; align-items: center; justify-content: center; min-width: 100px;}
+    .board .content_box li a .reply_icon .reply_wait {background: #ddd; padding:8px 15px; border-radius: 30px;}
+    .board .content_box li a .reply_icon .reply_ok {background: #111; padding:8px 15px; border-radius: 30px; color: #fff;}
+    .board .content_box li a h5 {flex-grow: 1; text-align: left; font-size: 18px; font-weight: normal; text-indent: 30px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 800px;}
+
+
+    /* 서브페이지8 article page board_write 게시판쓰기 페이지 */
+    .board_box h4 {margin-bottom: 10px;}
+    .board_write ul{display: flex;gap: 24px 40px;flex-wrap: wrap;}
+    .board_write ul li {width: 100%;}
+    .board_write ul li.half{width: 40%;flex-grow: 1;}
+    .board_write ul li .cont {display: flex;}
+    .board_write ul li .cont .radio_box{display: flex;width: 250px;gap: 10px;}
+    .board_write ul li .cont .radio_box label {display: flex;align-items: center;gap: 5px;}
+    .board_write ul li textarea {height: 200px;font-family:"Pretendard-normal";}
+
+    .board_write .check_box {margin: 20px 0 ;}
+    .board_write .check_box label {display: flex;align-items: center;gap: 10px;}
+    .board_write .check_box a{font-family: serif;}
+    .board_write .btn_box{display: flex;justify-content: center;}
+
+    /* mt50넣기 */
+
+
+
+
+
+/*------------------------------ 미디어쿼리------------------------------ */
+/* 최대 너비 1300px에서의 수정 */
+@media screen and (max-width: 1300px) {
+    .company .text_box .ex {margin-bottom: 3vw;}
+    .company .text_box strong {font-size: 4.2vw; margin-bottom: 3vw;}
+    .company .text_box p {font-size: 2vw;}
+    .company .img_box figure.img2 {width: 400px; height: 450px;}
+    .company .img_box {
+        display: flex;
+        justify-content: center; /* 중앙 정렬 */
+    }
+    .company img {
+        max-width: 100%; /* 이미지가 부모 요소를 초과하지 않도록 설정 */
+        height: auto; /* 비율 유지 */
+    }
+}
+
+/* -------------------------------------------------------------------------  */
+/* 최대 너비 1200px에서의 수정 */
+@media screen and (max-width: 1200px) {
+    .reservation-container {
+        gap: 30px;
+        padding: 20px;
+        box-sizing: border-box; /* padding과 border를 포함하여 총 너비를 설정 */
+        overflow-x: hidden;
+    }
+    .reservation-image, .reservation-details {
+        width: 48%;
+    }
+    .reservation-image img {
+        height: 100%; /* 이미지 높이를 예약 박스와 동일하게 맞춤 */
+        object-fit: cover;
+    }
+}
+
+/* -------------------------------------------------------------------------  */
+/* 최대 너비 1000px에서의 수정 */
+@media screen and (max-width: 1000px) {
+    #visual_sub {height: 150px;}
+    #visual_sub .sub_text {font-size: 36px;}
+    #section_box_sub h2 {font-size: 26px;}
+   
+    .reservation-container {
+        padding: 15px;
+        gap: 20px;
+    }
+    .reservation-image, .reservation-details {
+        width: 48%;
+    }
+    .reservation-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .reservation-details h3 {
+        font-size: 1.6em;
+    }
+    .reservation-details .form-group input,
+    .reservation-details .form-group select {
+        padding: 10px;
+    }
+    .reservation-details button {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+}
+
+
+/* -------------------------------------------------------------------------  */
+/* 최대넓이 880px에서의 수정 */
+
+@media screen and (max-width: 880px) {
+    /* 게시판페이지 */
+    .board .title_line li {min-width: 100px ;font-size: 16px;}
+  
+  
+    .board .content_box li a .num { min-width: 90px  ;font-size: 16px;}
+    .board .content_box li a em {min-width: 90px;font-size: 16px;}
+    .board .content_box li a .name { min-width: 90px ;font-size: 16px;}
+    .board .content_box li a .date { min-width:90px ;font-size: 16px;}
+    .board .content_box li a h5{min-width: 90px ;font-size: 16px;}
+    .board .content_box li a .reply_icon {min-width: 90px;font-size: 16px;}
+  }
+ 
+/* -------------------------------------------------------------------------  */
+/* 최대 너비 768px에서의 수정 */
+@media screen and (max-width: 768px) {
+    /* 이걸 그냥 센터박스로하니까 메인페이지 섹션2이미지가 안보이게됨 엄청커짐 */
+    .subpage .centerbox1200 {
+        flex-direction: column; /* 세로 방향 정렬 */
+        align-items: center; /* 중앙 정렬 */
+    }
+
+    .left-section, .right-section {
+        margin-right: 0; /* 오른쪽 여백 제거 */
+        margin-bottom: 20px; /* 하단 여백 추가 */
+    }
+   
+    .mo_menu.sub {
+        border: 1px solid #f3d9d9;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        z-index: 2;
+    }
+    .mo_menu.sub span {
+        background: rgb(255, 255, 255);
+    }
+    .mo_menu.sub span::before,
+    .mo_menu.sub span::after {
+        background: #ffffff;
+    }
+    .mo_menu.sub.on {
+        border: 1px solid #fff;
+    }
+    .mo_menu.sub.on span {
+        background: rgba(34,34,34,0);
+    }
+    .mo_menu.sub.on span::before,
+    .mo_menu.sub.on span::after {
+        background: #fff;
+    }
+
+    .company .centerbox1200 {
+        flex-direction: column;
+        align-items: center; /* 중앙 정렬 */
+    }
+    .company .text_box {
+        flex-basis: 100%; /* flex-basis를 100%로 조정 */
+    }
+    .company .img_box {
+        flex-basis: 100%; /* flex-basis를 100%로 조정 */
+        display: flex;
+        justify-content: center; /* 중앙 정렬 */
+    }
+    .company .text_box strong {
+        font-size: 30px;
+    }
+    .company .text_box p {
+        font-size: 16px;
+    }
+    .company .img_box figure.img1 {
+        display: none;
+    }
+    .company .img_box figure.img2{width: 100%;}
+
+    #visual_sub .sub_text {
+        display: none;
+    }
+
+    #visual_sub {height: 120px;}
+    #visual_sub .bread {display: none;}
+
+
+    .reservation-container {
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px;
+        gap: 15px;
+    }
+    .reservation-image, .reservation-details {
+        width: 100%;
+        height: auto;
+    }
+    .reservation-image img {
+        height: 250px; 
+        object-fit: cover;
+    }
+    .reservation-details h3 {
+        font-size: 1.4em;
+    }
+    .reservation-details .form-group input,
+    .reservation-details .form-group select {
+        padding: 8px;
+    }
+    .reservation-details button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    /* login */
+    .login_page form {width: 80%;}
+    .login_page .login_box {width: 100%;}
+
+    .login_page .login_box li input[type="text"]::placeholder,
+    .login_page .login_box li input[type="password"]::placeholder {font-size: 15px;}
+
+
+
+    /* .join_page .join_box li {width: 120px;} */
+
+    .login_page {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login_page fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .login_page .login_box {
+        width: 100%;
+        min-width: auto; 
+        box-sizing: border-box; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     /* 게시판 목록 (max768)*/
+     .board .title_line {display: none;}
+     .board .content_box {border-top: 1px solid #999;}
+     .board .content_box li{padding: 10px 0;height: auto;border-bottom: 1px solid #ddd;}
+     .board .content_box li a {flex-wrap: wrap;}
+     .board .content_box li a .num {display: none;}
+     .board .content_box li a em {order: 2;min-width: auto;width: auto;padding:0 10px;}
+     .board .content_box li a .name { order: 3;min-width: auto;width: auto;padding:0 10px;}
+     .board .content_box li a .date {order: 4;min-width: auto;width: auto;padding:0 10px;}
+     .board .content_box li a h5 {order:1;width: 100%;flex-shrink: 0;text-indent:10px}
+     .board .content_box li a .reply_icon {order: 5;flex-grow: 1;justify-content: flex-end;}
+    
+    /* 게시판 쓰기 (max768)*/
+
+     .board_write ul li.half{width: 100%}
+}
+/* -----------------------------------------------------------------------------*/
+/* 최대 너비 520px에서의 수정 */
+@media screen and (max-width: 520px) {
+
+ 
+    
+    #visual_sub .sub_text {letter-spacing: 1em;}
+    #section_box_sub .snb ul {
+        flex-wrap: wrap;
+        justify-content: center; /* 중앙 정렬 */
+    }
+    #section_box_sub .snb ul li {
+        width: 30%; 
+        text-align: center; /* 중앙 정렬 */
+    }
+    #section_box_sub .snb ul li a {border: 0;}
+
+    .company .img_box {
+        justify-content: center; /* 중앙 정렬 */
+    }
+    .company .img_box figure.img1 {
+        display: none;
+    }
+    .company .img_box figure.img2 {
+        width: calc(100vw - 40px); 
+        height: 75vw;
+    }
+
+    .join_page .join_box li {
+        flex-direction: column; /* 세로 방향 정렬 */
+        align-items: center; /* 중앙 정렬 */
+    }
+    .join_page .join_box li .input_wrap {
+        flex-direction: column; /* 세로 방향 정렬 */
+        align-items: center; /* 중앙 정렬 */
+    }
+
+
+     /* 게시판 목록 (max520)*/
+     .board .board_top {flex-direction: column;}
+     .board .board_top .search {margin-bottom: 10px;}
+    
+}
+/* ----------------------------------------------------------------------------*/
+/* 최대 너비 440px에서의 수정 */
+@media screen and (max-width: 440px) {
+
+
+
+
+    .mo_menu.sub {
+        border: 1px solid #f3d9d9;
+        position: absolute;
+        left: 8px;
+        top: 10px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        z-index: 2;
+    }
+
+    
+    .mo_menu.sub span {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s;
+    }
+    
+    #visual_sub {height: 100px;}
+    #visual_sub .sub_text {font-size: 28px;}
+    #section_box_sub h2 {font-size: 22px;}
+    .reservation-container {
+        padding: 8px;
+        gap: 10px;
+    }
+    .reservation-details h3 {
+        font-size: 1.2em;
+    }
+    .reservation-details .form-group input,
+    .reservation-details .form-group select {
+        padding: 6px;
+    }
+    .reservation-details button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .reservation-details .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .reservation-details .form-row .form-group {
+        width: 100%;
+        margin-bottom: 10px; /* 입력 필드 사이에 간격을 주기 위해 */
+    }
+}
+
+
+    /* 최대 너비 320px에서의 수정 */
+@media screen and (max-width: 320px) {
+
+    .mo_menu.sub {
+        border: 1px solid #f3d9d9;
+        position: absolute;
+        left: 8px;
+        top: 12px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        z-index: 2;
+
+    }
+    .mo_menu.sub span {
+        background: rgb(255, 255, 255);
+    }
+    .reservation-container {
+        padding: 5px;
+        gap: 8px;
+        box-sizing: border-box; /* padding과 border를 포함하여 총 너비를 설정 */
+        overflow-x: hidden; /* 가로 스크롤을 숨김 */
+    }
+    .reservation-image, .reservation-details {
+        width: 100%; /* 폭을 100%로 설정 */
+    }
+    .reservation-image img {
+        height: auto; /* 이미지 높이를 자동 조정하여 비율 유지 */
+        max-width: 100%; /* 이미지가 부모 요소를 초과하지 않도록 설정 */
+        object-fit: cover;
+    }
+    .reservation-details h3 {
+        font-size: 1em;
+    }
+    .reservation-details .form-group input,
+    .reservation-details .form-group select {
+        padding: 5px;
+    }
+    .reservation-details button {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+}
+
+
+    .login_page .login_box {
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+/* 최대 너비 280px에서의 수정 */
+/* 최대 너비 280px에서의 수정 */
+/* 최대 너비 280px에서의 수정 */
+@media screen and (max-width: 280px) {
+
+    
+    .mo_menu.sub {
+        border: 1px solid #f3d9d9;
+        position: absolute;
+        left: 2px;
+        top: 12px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        z-index: 2;
+
+    }
+    .mo_menu.sub span {
+        background: rgb(255, 255, 255);}
+
+    
+    header h1 img{margin-left: 10px;}
+    }
+
+
+
+
+    .centerbox {
+        width: 100%; /* 화면 전체 너비 사용 */
+        max-width: 320px; /* 최대 너비 설정 */
+        margin: 0 auto; /* 중앙 정렬 */
+        padding: 4px; /* 패딩 조정 */
+        box-sizing: border-box; /* 패딩과 보더 포함 */
+    }
+
+    .reservation-container {
+        width: 100%; /* 화면 전체 너비 사용 */
+        padding: 4px; /* 패딩 조정 */
+        box-sizing: border-box; /* 패딩과 보더 포함 */
+        overflow-x: hidden; /* 가로 스크롤 숨김 */
+    }
+
+    .reservation-details {
+        width: 100%; /* 화면 전체 너비 사용 */
+        box-sizing: border-box; /* 패딩과 보더 포함 */
+    }
+
+    .reservation-details h3 {
+        font-size: 0.9em; /* 폰트 사이즈 조정 */
+    }
+
+    .reservation-details .form-group input,
+    .reservation-details .form-group select {
+        padding: 4px; /* 패딩 조정 */
+        font-size: 0.9em; /* 폰트 사이즈 조정 */
+    }
+
+    select {font-size: 12px}
+
+    .reservation-details button {
+        padding: 4px; /* 패딩 조정 */
+        font-size: 0.8em; /* 폰트 사이즈 조정 */
+    }
+
+    /* .reservation-details .form-group .select{font-size: 12px;}흠 위에 잇는 셀렉트... */
+
+
+
+    .swiper-pagination {
+        /* 페이지네이션을 한 줄에 나오도록 설정 */
+        display: flex;
+        justify-content: center; /* 중앙 정렬 */
+        width: 100%; /* 전체 너비 사용 */
+      }
+    
+      .swiper-pagination-bullet {
+        /* 페이지네이션 버튼 간격 조정 */
+        margin: 0 5px; /* 버튼 사이의 간격 조정 */
+      }
+    
+

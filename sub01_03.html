@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<bod class="subpage">
+    <!--01-03회사소개페이지-->
+    <header class="header_sub">
+        <!-- header.html 자리 -->
+    </header>
+
+    
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text">
+                OUR LOCATION
+            </div>
+            <div class="bread">
+                <a href="#">HOME</a>
+                <span> > </span>
+                <a href="#">OUR LOCATION</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="section_box_sub">
+        
+        <h2>오시는 길 
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+        </h2>
+
+        <nav class="snb">
+          <div class="centerbox1200">
+            <ul>
+                <li class="on"><a href="sub01_01.html">회사 소개</a></li>
+                <li><a href="sub01_02.html">리더십 소개</a></li>
+                <li><a href="sub01_03.html">오시는 길</a></li>
+            </ul>
+            <span class="snb_line"></span>
+        </div>
+        </nav>
+
+        <article class="content direction">
+            <div class="centerbox1200">
+                <div class="direct_box">
+                    <!--
+	                * 카카오맵 - 약도서비스
+	                * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+	                * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+                    -->
+                        <!-- 1. 약도 노드 -->
+                        <div id="daumRoughmapContainer1722996537344" class="root_daum_roughmap root_daum_roughmap_landing"
+                        style="width: 100%;"></div>
+
+                    <!-- 2. 설치 스크립트 -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+	                new daum.roughmap.Lander({
+		            "timestamp" : "1722996537344",
+		            "key" : "2ka5i",
+		            "mapWidth" : "100%",
+		            "mapHeight" : "360"
+	            }).render();
+                </script>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+
+
+    <footer></footer>
+
+
+
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".section2Slide", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 3,  //브라우저가 769보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+
+  </script>
+</bod>
+</html>
